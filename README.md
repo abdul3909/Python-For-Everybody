@@ -1,5 +1,5 @@
 # Python-For-Everybody
-Using Python to access web data
+Using Python to access web data(Week 2 Assignment Solution)
 
  Finding Numbers in a Haystack
 
