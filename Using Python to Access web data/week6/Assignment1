@@ -1,0 +1,18 @@
+import json
+import urllib.request
+import urllib.error
+import urllib.parse
+
+url = 'http://py4e-data.dr-chuck.net/comments_818522.json'
+uh = urllib.request.urlopen(url)
+data = uh.read()
+lst = list()
+
+js = [json.loads(data)]
+for key in js:
+    count = key["comments"]
+    for line in count:
+        value = line["count"]
+        lst.append(value)
+
+print(sum(lst))
